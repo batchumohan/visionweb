@@ -15,7 +15,7 @@ public class Sample {
 	public void testEasy() {	
 		driver.get("http://demo.guru99.com/selenium/guru99home/");  
 		String title = driver.getTitle();				 
-		AssertJUnit.assertTrue(title.contains("Demo Guru99 Page Mohan")); 		
+		AssertJUnit.assertTrue(title.contains("Demo Guru99 Page")); 		
 	}	
 	@BeforeTest
 	public void beforeTest() {	
