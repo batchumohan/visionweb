@@ -19,11 +19,13 @@ public class VisionWebFunctions {
 		webdriver.manage().window().maximize();
 		
 		System.out.println("Kumar");
-
+		
 		System.out.println(webdriver.getTitle());
 		
 		webdriver.findElement(By.id("UserName")).sendKeys("testadmin");
+		System.out.println("Batchu");
 		webdriver.findElement(By.id("PassWord")).sendKeys("Breg2007!");
+		System.out.println("Kavya");
 		webdriver.findElement(By.id("Login")).click();
 		
 		pageUrl = webdriver.getCurrentUrl();
