@@ -14,9 +14,11 @@ public class VisionWebFunctions {
 	
 	public static void Login() throws Exception{
 		
-		
+		System.out.println("Mohan");
 		webdriver.get("http://136.179.23.98/default.aspx");
 		webdriver.manage().window().maximize();
+		
+		System.out.println("Kumar");
 		
 		webdriver.findElement(By.id("UserName")).sendKeys("testadmin");
 		webdriver.findElement(By.id("PassWord")).sendKeys("Breg2007!");
