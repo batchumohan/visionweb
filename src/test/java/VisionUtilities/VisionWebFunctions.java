@@ -3,6 +3,8 @@ package VisionUtilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class VisionWebFunctions {
 	
@@ -14,16 +16,19 @@ public class VisionWebFunctions {
 	
 	public static void Login() throws Exception{
 		
-		System.out.println("Mohan");
+		
 		webdriver.get("http://136.179.23.98/default.aspx");
 		webdriver.manage().window().maximize();
 		
-		System.out.println("Kumar");
-		
-		System.out.println(webdriver.getTitle());
+		WebDriverWait name = new WebDriverWait(webdriver,30);
+		name.until(ExpectedConditions.presenceOfElementLocated(By.id("UserName")));  
 		
 		webdriver.findElement(By.id("UserName")).sendKeys("testadmin");
 		System.out.println("Batchu");
+		
+		WebDriverWait pass = new WebDriverWait(webdriver,30);
+		pass.until(ExpectedConditions.presenceOfElementLocated(By.id("PassWord"))); 
+	    
 		webdriver.findElement(By.id("PassWord")).sendKeys("Breg2007!");
 		System.out.println("Kavya");
 		webdriver.findElement(By.id("Login")).click();
