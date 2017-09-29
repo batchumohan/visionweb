@@ -20,6 +20,8 @@ public class VisionWebFunctions {
 		webdriver.get("http://136.179.23.98/default.aspx");
 		webdriver.manage().window().maximize();
 		
+		Thread.sleep(30000);
+		
 		WebDriverWait name = new WebDriverWait(webdriver,50);
 		name.until(ExpectedConditions.presenceOfElementLocated(By.id("UserName")));  
 		
