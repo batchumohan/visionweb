@@ -2,15 +2,23 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="30359" started-at="2017-09-29T09:56:20Z" finished-at="2017-09-29T09:56:51Z">
+  <suite name="Suite" duration-ms="16513" started-at="2017-09-29T10:22:53Z" finished-at="2017-09-29T10:23:10Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="30359" started-at="2017-09-29T09:56:20Z" finished-at="2017-09-29T09:56:51Z">
+    <test name="Test" duration-ms="16513" started-at="2017-09-29T10:22:53Z" finished-at="2017-09-29T10:23:10Z">
       <class name="Breg.VisionTestCases.WebTestCases">
-        <test-method status="PASS" signature="LoginTestCase()[pri:0, instance:Breg.VisionTestCases.WebTestCases@60addb54]" name="LoginTestCase" duration-ms="30347" started-at="2017-09-29T15:26:20Z" finished-at="2017-09-29T15:26:51Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Breg.VisionTestCases.WebTestCases@6be46e8f]" name="beforeTest" is-config="true" duration-ms="6274" started-at="2017-09-29T15:52:53Z" finished-at="2017-09-29T15:53:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginTestCase -->
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loginTestCase()[pri:0, instance:Breg.VisionTestCases.WebTestCases@6be46e8f]" name="loginTestCase" duration-ms="9988" started-at="2017-09-29T15:53:00Z" finished-at="2017-09-29T15:53:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestCase -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Breg.VisionTestCases.WebTestCases@6be46e8f]" name="afterTest" is-config="true" duration-ms="225" started-at="2017-09-29T15:53:10Z" finished-at="2017-09-29T15:53:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- Breg.VisionTestCases.WebTestCases -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

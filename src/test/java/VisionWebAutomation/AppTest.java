@@ -1,4 +1,4 @@
-package Breg.VisionWebAutomation;
+package VisionWebAutomation;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;

@@ -1,10 +1,10 @@
-package Breg.VisionTestCases;
+package VisionTestCases;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import Breg.VisionUtilities.VisionWebFunctions;
+import VisionUtilities.VisionWebFunctions;
 
 public class WebTestCases {
 	

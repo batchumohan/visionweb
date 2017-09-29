@@ -1,4 +1,4 @@
-package Breg.VisionUtilities;
+package VisionUtilities;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -23,6 +23,7 @@ public class VisionWebFunctions {
 	}
 	
 	public static void Login() throws Exception{
+		
 		
 		webdriver.get("http://136.179.23.98/default.aspx");
 		webdriver.manage().window().maximize();

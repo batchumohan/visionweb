@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="Breg.VisionTestCases.WebTestCases"/>
+      <class name="VisionTestCases.WebTestCases"/>
       
     </classes>
   </test> <!-- Test -->
