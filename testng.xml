@@ -3,8 +3,8 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="Example.Sample"/>
-      <!--  <class name="Breg.VisionWebAutomation.AppTest"/>-->
+      <class name="Breg.VisionTestCases.WebTestCases"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
