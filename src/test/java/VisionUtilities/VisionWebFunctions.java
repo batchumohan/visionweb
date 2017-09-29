@@ -19,6 +19,8 @@ public class VisionWebFunctions {
 		webdriver.manage().window().maximize();
 		
 		System.out.println("Kumar");
+
+		System.out.println(webdriver.getTitle());
 		
 		webdriver.findElement(By.id("UserName")).sendKeys("testadmin");
 		webdriver.findElement(By.id("PassWord")).sendKeys("Breg2007!");
