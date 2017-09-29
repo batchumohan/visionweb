@@ -20,17 +20,21 @@ public class VisionWebFunctions {
 		webdriver.get("http://136.179.23.98/default.aspx");
 		webdriver.manage().window().maximize();
 		
-		WebDriverWait name = new WebDriverWait(webdriver,30);
+		WebDriverWait name = new WebDriverWait(webdriver,50);
 		name.until(ExpectedConditions.presenceOfElementLocated(By.id("UserName")));  
 		
 		webdriver.findElement(By.id("UserName")).sendKeys("testadmin");
 		System.out.println("Batchu");
 		
-		WebDriverWait pass = new WebDriverWait(webdriver,30);
+		WebDriverWait pass = new WebDriverWait(webdriver,50);
 		pass.until(ExpectedConditions.presenceOfElementLocated(By.id("PassWord"))); 
 	    
 		webdriver.findElement(By.id("PassWord")).sendKeys("Breg2007!");
 		System.out.println("Kavya");
+		
+		WebDriverWait login = new WebDriverWait(webdriver,50);
+		login.until(ExpectedConditions.presenceOfElementLocated(By.id("Login")));
+		
 		webdriver.findElement(By.id("Login")).click();
 		
 		pageUrl = webdriver.getCurrentUrl();
