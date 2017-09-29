@@ -7,20 +7,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class VisionWebFunctions {
 	
 	
-	static WebDriver webdriver = null;
+	static WebDriver webdriver = new FirefoxDriver();
 	static String pageTitle = null;
 	static String pageUrl = null;
 	static String getText = null;
-	
-	public static void BeforeTest() throws Exception{
-		
-		webdriver = new FirefoxDriver();
-	}
-	
-	public static void AfterTest() throws Exception{
-		
-		webdriver.quit();
-	}
 	
 	public static void Login() throws Exception{
 		
