@@ -17,7 +17,7 @@ public class VisionWebFunctions {
 	
 	public static void Login() throws Exception{
 		
-		System.setProperty("webdriver.gecko.driver", "/Users/mohankumar/Documents/AdtechAutomation/VisionWebAutomation/Drivers/geckodriver");
+		System.setProperty("webdriver.gecko.driver", "/Users/Shared/Jenkins/Home/workspace/Breg_Vision_Web/Drivers/geckodriver");
 		
 		
 		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
