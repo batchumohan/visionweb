@@ -3,13 +3,11 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="Example.Sample">
+      <class name="VisionTestCases.WebTestCases">
         <methods>
-          <include name="testEasy"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
+          <include name="loginTestCase"/>
         </methods>
-      </class> <!-- Example.Sample -->
+      </class> <!-- VisionTestCases.WebTestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
