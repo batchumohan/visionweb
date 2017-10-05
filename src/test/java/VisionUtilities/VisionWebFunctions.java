@@ -3,6 +3,7 @@ package VisionUtilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -17,9 +18,14 @@ public class VisionWebFunctions {
 	public static void Login() throws Exception{
 		
 		System.setProperty("webdriver.gecko.driver", "/Users/mohankumar/Documents/AdtechAutomation/VisionWebAutomation/Drivers/geckodriver");
+		
+		
+		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+		capabilities.setCapability("marionette", true);
 		webdriver = new FirefoxDriver();
 		
-		webdriver.get("http://136.179.23.98/default.aspx");
+		
+		webdriver.get("	http://136.179.23.98/default.aspx");
 		webdriver.manage().window().maximize();
 		
 		
